@@ -1,7 +1,7 @@
-drop user if exists 'user_spring5_mybatis';
+drop user if exists 'user_spring5';
 grant all privileges
-	on spring5_mybatis.*
-	to 'user_spring5_mybatis'@'localhost' identified by 'rootroot';
+	on spring5.*
+	to 'user_spring5'@'localhost' identified by 'rootroot';
 
-drop database if exists spring5_mybatis;
-create database spring5_mybatis;
+drop database if exists spring5;
+create database spring5;

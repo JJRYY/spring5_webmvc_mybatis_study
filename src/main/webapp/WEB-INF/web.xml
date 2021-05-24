@@ -22,9 +22,9 @@
   	<init-param>
   		<param-name>contextConfigLocation</param-name>
   		<param-value>
-  			spring5_webmvc_mybatis_study.config.ContextDataSource
+  			<!-- spring5_webmvc_mybatis_study.config.ContextDataSource
   			spring5_webmvc_mybatis_study.config.MvcConfig
-			spring5_webmvc_mybatis_study.config.ContextSqlSession
+			spring5_webmvc_mybatis_study.config.ContextSqlSession -->
 			spring5_webmvc_mybatis_study.config.ContextRoot
   		</param-value>
   	</init-param>

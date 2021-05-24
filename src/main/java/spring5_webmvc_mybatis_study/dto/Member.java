@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import spring5_webmvc_mybatis_study.exception.WrongIdPasswordException;
 
-
 public class Member {
 	private Long id;
 	private String email;
@@ -13,6 +12,12 @@ public class Member {
 	private LocalDateTime registerDateTime;
 
 	public Member() {
+	}
+
+	public Member(String email, String password, String name) {
+		this.email = email;
+		this.password = password;
+		this.name = name;
 	}
 
 	public Member(String email, String password, String name, LocalDateTime registerDateTime) {
@@ -69,11 +74,14 @@ public class Member {
 		this.password = newPassword;
 	}
 
+	public boolean matchPassword(String password) {
+		return this.password.equals(password);
+	}
+
 	@Override
 	public String toString() {
 		return String.format("Member [email=%s, password=%s, name=%s, registerDateTime=%s]", email, password, name,
 				registerDateTime);
 	}
-	
-	
+
 }
