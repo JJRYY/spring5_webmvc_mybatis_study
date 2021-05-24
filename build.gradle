@@ -1,6 +1,5 @@
 plugins {
     id 'war'
-    id 'java'
 }
 
 sourceCompatibility= 1.8 //컴파일할 때 적용할 java code의 jdkversion 지정
@@ -17,9 +16,9 @@ repositories {
 
 dependencies {
 	//jsp
-	implementation group: 'javax.servlet.jsp.jstl', name: 'jstl', version: '1.2'
-	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
-	compileOnly group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.3'
+	compile group: 'javax.servlet.jsp.jstl', name: 'jstl', version: '1.2'
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+	providedCompile group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.3'
 	
 	// jstl
 	implementation group: 'org.apache.taglibs', name: 'taglibs-standard-impl', version: '1.2.5'
