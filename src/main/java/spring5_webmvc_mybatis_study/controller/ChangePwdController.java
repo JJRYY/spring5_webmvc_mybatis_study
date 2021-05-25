@@ -14,6 +14,7 @@ import spring5_webmvc_mybatis_study.dto.AuthInfo;
 import spring5_webmvc_mybatis_study.dto.ChangePwdCommand;
 import spring5_webmvc_mybatis_study.exception.WrongIdPasswordException;
 import spring5_webmvc_mybatis_study.service.ChangePasswordService;
+import spring5_webmvc_mybatis_study.validator.ChangePwdCommandValidator;
 
 @Controller
 @RequestMapping("/edit/changePassword")

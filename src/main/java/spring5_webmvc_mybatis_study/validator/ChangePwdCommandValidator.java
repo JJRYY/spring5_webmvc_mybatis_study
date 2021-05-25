@@ -1,4 +1,4 @@
-package spring5_webmvc_mybatis_study.controller;
+package spring5_webmvc_mybatis_study.validator;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;

@@ -1,4 +1,4 @@
-package spring5_webmvc_mybatis_study.controller;
+package spring5_webmvc_mybatis_study.validator;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+
+import spring5_webmvc_mybatis_study.dto.LoginCommand;
 
 public class LoginCommandValidator implements Validator {
 	private static final String emailRegExp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";

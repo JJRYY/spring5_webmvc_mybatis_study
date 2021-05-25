@@ -1,4 +1,4 @@
-package spring5_webmvc_mybatis_study.controller;
+package spring5_webmvc_mybatis_study.dto;
 
 public class LoginCommand {
 	private String email;

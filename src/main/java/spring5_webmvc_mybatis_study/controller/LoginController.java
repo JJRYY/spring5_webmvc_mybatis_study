@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import spring5_webmvc_mybatis_study.dto.AuthInfo;
+import spring5_webmvc_mybatis_study.dto.LoginCommand;
 import spring5_webmvc_mybatis_study.exception.WrongIdPasswordException;
 import spring5_webmvc_mybatis_study.service.AuthService;
+import spring5_webmvc_mybatis_study.validator.LoginCommandValidator;
 
 @Controller
 @RequestMapping("/login")
