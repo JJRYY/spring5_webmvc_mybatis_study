@@ -44,4 +44,10 @@
 		where regdate between #{from} and #{to}
 		order by regdate desc
 	</select>
+	
+	<select id="selectById" resultMap="resMember">
+		select id, email, password, name, regdate 
+		from member 
+		where id = #{id}
+	</select>
 </mapper>

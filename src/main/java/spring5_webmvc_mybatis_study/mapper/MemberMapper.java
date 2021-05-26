@@ -18,4 +18,5 @@ public interface MemberMapper {
 	int deleteMember(Member member);
 	
 	List<Member> selectMemberByRegdate(ListCommand listCommand);
+	Member selectById(Long memId);
 }
